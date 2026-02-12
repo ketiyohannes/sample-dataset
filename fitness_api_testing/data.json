@@ -1,0 +1,622 @@
+{
+    "users": [
+        {
+            "id": "u1",
+            "name": "Alex Thompson",
+            "email": "alex@example.com",
+            "equipment": [
+                "dumbbells",
+                "barbell",
+                "bench",
+                "pull-up bar"
+            ],
+            "fitnessLevel": "intermediate",
+            "currentStreak": 5,
+            "longestStreak": 14,
+            "totalWorkouts": 47,
+            "lastWorkoutDate": "2024-01-15",
+            "badges": [
+                {
+                    "id": "b1",
+                    "name": "First Workout",
+                    "description": "Complete your first workout",
+                    "earnedAt": "2023-06-01T10:00:00Z",
+                    "criteria": {
+                        "type": "count",
+                        "threshold": 1
+                    }
+                },
+                {
+                    "id": "b3",
+                    "name": "Week Warrior",
+                    "description": "Maintain a 7-day streak",
+                    "earnedAt": "2023-08-15T10:00:00Z",
+                    "criteria": {
+                        "type": "streak",
+                        "threshold": 7
+                    }
+                }
+            ],
+            "personalRecords": {
+                "Bench Press": 185,
+                "Squat": 225,
+                "Deadlift": 275
+            }
+        },
+        {
+            "id": "u2",
+            "name": "Jordan Martinez",
+            "email": "jordan@example.com",
+            "equipment": [
+                "dumbbells",
+                "resistance bands"
+            ],
+            "fitnessLevel": "beginner",
+            "currentStreak": 0,
+            "longestStreak": 3,
+            "totalWorkouts": 8,
+            "lastWorkoutDate": "2023-12-20",
+            "badges": [
+                {
+                    "id": "b1",
+                    "name": "First Workout",
+                    "description": "Complete your first workout",
+                    "earnedAt": "2023-12-01T10:00:00Z",
+                    "criteria": {
+                        "type": "count",
+                        "threshold": 1
+                    }
+                }
+            ],
+            "personalRecords": {
+                "Dumbbell Curl": 25,
+                "Shoulder Press": 30
+            }
+        },
+        {
+            "id": "u3",
+            "name": "Sam Wilson",
+            "email": "sam@example.com",
+            "equipment": [
+                "dumbbells",
+                "barbell",
+                "bench",
+                "squat rack",
+                "cable machine"
+            ],
+            "fitnessLevel": "advanced",
+            "currentStreak": 12,
+            "longestStreak": 30,
+            "totalWorkouts": 156,
+            "lastWorkoutDate": "2024-01-16",
+            "badges": [
+                {
+                    "id": "b1",
+                    "name": "First Workout",
+                    "description": "Complete your first workout",
+                    "earnedAt": "2022-01-05T10:00:00Z",
+                    "criteria": {
+                        "type": "count",
+                        "threshold": 1
+                    }
+                },
+                {
+                    "id": "b2",
+                    "name": "Centurion",
+                    "description": "Complete 100 workouts",
+                    "earnedAt": "2023-05-20T10:00:00Z",
+                    "criteria": {
+                        "type": "count",
+                        "threshold": 100
+                    }
+                },
+                {
+                    "id": "b3",
+                    "name": "Week Warrior",
+                    "description": "Maintain a 7-day streak",
+                    "earnedAt": "2022-02-01T10:00:00Z",
+                    "criteria": {
+                        "type": "streak",
+                        "threshold": 7
+                    }
+                },
+                {
+                    "id": "b4",
+                    "name": "Iron Will",
+                    "description": "Maintain a 30-day streak",
+                    "earnedAt": "2023-03-15T10:00:00Z",
+                    "criteria": {
+                        "type": "streak",
+                        "threshold": 30
+                    }
+                },
+                {
+                    "id": "b5",
+                    "name": "200 Club",
+                    "description": "Bench press 200 lbs",
+                    "earnedAt": "2023-06-10T10:00:00Z",
+                    "criteria": {
+                        "type": "weight",
+                        "threshold": 200,
+                        "exerciseType": "Bench Press"
+                    }
+                }
+            ],
+            "personalRecords": {
+                "Bench Press": 245,
+                "Squat": 315,
+                "Deadlift": 405,
+                "Overhead Press": 155
+            }
+        },
+        {
+            "id": "u4",
+            "name": "Taylor Chen",
+            "email": "taylor@example.com",
+            "equipment": [],
+            "fitnessLevel": "beginner",
+            "currentStreak": 0,
+            "longestStreak": 0,
+            "totalWorkouts": 0,
+            "badges": [],
+            "personalRecords": {}
+        }
+    ],
+    "workouts": [
+        {
+            "id": "w1",
+            "userId": "u1",
+            "date": "2024-01-15T08:00:00Z",
+            "exercises": [
+                {
+                    "name": "Bench Press",
+                    "sets": 4,
+                    "reps": 8,
+                    "weight": 155,
+                    "equipment": [
+                        "barbell",
+                        "bench"
+                    ]
+                },
+                {
+                    "name": "Dumbbell Row",
+                    "sets": 3,
+                    "reps": 10,
+                    "weight": 50,
+                    "equipment": [
+                        "dumbbells"
+                    ]
+                },
+                {
+                    "name": "Pull-ups",
+                    "sets": 3,
+                    "reps": 8,
+                    "equipment": [
+                        "pull-up bar"
+                    ]
+                }
+            ],
+            "completedAt": "2024-01-15T09:15:00Z",
+            "duration": 75
+        },
+        {
+            "id": "w2",
+            "userId": "u1",
+            "date": "2024-01-14T08:00:00Z",
+            "exercises": [
+                {
+                    "name": "Squat",
+                    "sets": 4,
+                    "reps": 6,
+                    "weight": 205,
+                    "equipment": [
+                        "barbell"
+                    ]
+                },
+                {
+                    "name": "Leg Press",
+                    "sets": 3,
+                    "reps": 12,
+                    "weight": 300,
+                    "equipment": [
+                        "leg press machine"
+                    ]
+                }
+            ],
+            "completedAt": "2024-01-14T09:00:00Z",
+            "duration": 60
+        },
+        {
+            "id": "w3",
+            "userId": "u3",
+            "date": "2024-01-16T06:00:00Z",
+            "exercises": [
+                {
+                    "name": "Deadlift",
+                    "sets": 5,
+                    "reps": 3,
+                    "weight": 385,
+                    "equipment": [
+                        "barbell"
+                    ]
+                },
+                {
+                    "name": "Barbell Row",
+                    "sets": 4,
+                    "reps": 8,
+                    "weight": 185,
+                    "equipment": [
+                        "barbell"
+                    ]
+                },
+                {
+                    "name": "Face Pulls",
+                    "sets": 3,
+                    "reps": 15,
+                    "equipment": [
+                        "cable machine"
+                    ]
+                }
+            ],
+            "completedAt": "2024-01-16T07:30:00Z",
+            "duration": 90
+        },
+        {
+            "id": "w4",
+            "userId": "u2",
+            "date": "2023-12-20T10:00:00Z",
+            "exercises": [
+                {
+                    "name": "Dumbbell Curl",
+                    "sets": 3,
+                    "reps": 12,
+                    "weight": 20,
+                    "equipment": [
+                        "dumbbells"
+                    ]
+                },
+                {
+                    "name": "Shoulder Press",
+                    "sets": 3,
+                    "reps": 10,
+                    "weight": 25,
+                    "equipment": [
+                        "dumbbells"
+                    ]
+                }
+            ],
+            "completedAt": "2023-12-20T10:45:00Z",
+            "duration": 45
+        },
+        {
+            "id": "w5",
+            "userId": "u1",
+            "date": "2024-01-13T08:00:00Z",
+            "exercises": [
+                {
+                    "name": "Overhead Press",
+                    "sets": 4,
+                    "reps": 6,
+                    "weight": 95,
+                    "equipment": [
+                        "barbell"
+                    ]
+                },
+                {
+                    "name": "Lateral Raise",
+                    "sets": 3,
+                    "reps": 12,
+                    "weight": 20,
+                    "equipment": [
+                        "dumbbells"
+                    ]
+                }
+            ],
+            "completedAt": "2024-01-13T08:50:00Z",
+            "duration": 50
+        },
+        {
+            "id": "w6",
+            "userId": "u1",
+            "date": "2024-01-12T08:00:00Z",
+            "exercises": [
+                {
+                    "name": "Bench Press",
+                    "sets": 4,
+                    "reps": 8,
+                    "weight": 150,
+                    "equipment": [
+                        "barbell",
+                        "bench"
+                    ]
+                }
+            ],
+            "completedAt": "2024-01-12T08:45:00Z",
+            "duration": 45
+        },
+        {
+            "id": "w7",
+            "userId": "u1",
+            "date": "2024-01-11T08:00:00Z",
+            "exercises": [
+                {
+                    "name": "Squat",
+                    "sets": 4,
+                    "reps": 8,
+                    "weight": 195,
+                    "equipment": [
+                        "barbell"
+                    ]
+                }
+            ],
+            "completedAt": "2024-01-11T08:50:00Z",
+            "duration": 50
+        },
+        {
+            "id": "w8",
+            "userId": "u3",
+            "date": "2024-01-15T06:00:00Z",
+            "exercises": [
+                {
+                    "name": "Bench Press",
+                    "sets": 5,
+                    "reps": 5,
+                    "weight": 225,
+                    "equipment": [
+                        "barbell",
+                        "bench"
+                    ]
+                },
+                {
+                    "name": "Incline Press",
+                    "sets": 4,
+                    "reps": 8,
+                    "weight": 155,
+                    "equipment": [
+                        "barbell",
+                        "bench"
+                    ]
+                }
+            ],
+            "completedAt": "2024-01-15T07:15:00Z",
+            "duration": 75
+        }
+    ],
+    "availableBadges": [
+        {
+            "id": "b1",
+            "name": "First Workout",
+            "description": "Complete your first workout",
+            "criteria": {
+                "type": "count",
+                "threshold": 1
+            }
+        },
+        {
+            "id": "b2",
+            "name": "Centurion",
+            "description": "Complete 100 workouts",
+            "criteria": {
+                "type": "count",
+                "threshold": 100
+            }
+        },
+        {
+            "id": "b3",
+            "name": "Week Warrior",
+            "description": "Maintain a 7-day streak",
+            "criteria": {
+                "type": "streak",
+                "threshold": 7
+            }
+        },
+        {
+            "id": "b4",
+            "name": "Iron Will",
+            "description": "Maintain a 30-day streak",
+            "criteria": {
+                "type": "streak",
+                "threshold": 30
+            }
+        },
+        {
+            "id": "b5",
+            "name": "200 Club",
+            "description": "Bench press 200 lbs",
+            "criteria": {
+                "type": "weight",
+                "threshold": 200,
+                "exerciseType": "Bench Press"
+            }
+        },
+        {
+            "id": "b6",
+            "name": "Triple Plate",
+            "description": "Squat 315 lbs",
+            "criteria": {
+                "type": "weight",
+                "threshold": 315,
+                "exerciseType": "Squat"
+            }
+        },
+        {
+            "id": "b7",
+            "name": "Dedication",
+            "description": "Complete 50 workouts",
+            "criteria": {
+                "type": "count",
+                "threshold": 50
+            }
+        },
+        {
+            "id": "b8",
+            "name": "Consistent",
+            "description": "Maintain a 14-day streak",
+            "criteria": {
+                "type": "streak",
+                "threshold": 14
+            }
+        }
+    ],
+    "exercises": [
+        {
+            "name": "Bench Press",
+            "equipment": [
+                "barbell",
+                "bench"
+            ],
+            "muscles": [
+                "chest",
+                "triceps",
+                "shoulders"
+            ],
+            "difficulty": "intermediate"
+        },
+        {
+            "name": "Squat",
+            "equipment": [
+                "barbell"
+            ],
+            "muscles": [
+                "quadriceps",
+                "glutes",
+                "hamstrings"
+            ],
+            "difficulty": "intermediate"
+        },
+        {
+            "name": "Deadlift",
+            "equipment": [
+                "barbell"
+            ],
+            "muscles": [
+                "back",
+                "glutes",
+                "hamstrings"
+            ],
+            "difficulty": "advanced"
+        },
+        {
+            "name": "Pull-ups",
+            "equipment": [
+                "pull-up bar"
+            ],
+            "muscles": [
+                "back",
+                "biceps"
+            ],
+            "difficulty": "intermediate"
+        },
+        {
+            "name": "Push-ups",
+            "equipment": [],
+            "muscles": [
+                "chest",
+                "triceps",
+                "shoulders"
+            ],
+            "difficulty": "beginner"
+        },
+        {
+            "name": "Dumbbell Curl",
+            "equipment": [
+                "dumbbells"
+            ],
+            "muscles": [
+                "biceps"
+            ],
+            "difficulty": "beginner"
+        },
+        {
+            "name": "Shoulder Press",
+            "equipment": [
+                "dumbbells"
+            ],
+            "muscles": [
+                "shoulders",
+                "triceps"
+            ],
+            "difficulty": "beginner"
+        },
+        {
+            "name": "Dumbbell Row",
+            "equipment": [
+                "dumbbells"
+            ],
+            "muscles": [
+                "back",
+                "biceps"
+            ],
+            "difficulty": "beginner"
+        },
+        {
+            "name": "Lunges",
+            "equipment": [],
+            "muscles": [
+                "quadriceps",
+                "glutes"
+            ],
+            "difficulty": "beginner"
+        },
+        {
+            "name": "Plank",
+            "equipment": [],
+            "muscles": [
+                "core"
+            ],
+            "difficulty": "beginner"
+        },
+        {
+            "name": "Overhead Press",
+            "equipment": [
+                "barbell"
+            ],
+            "muscles": [
+                "shoulders",
+                "triceps"
+            ],
+            "difficulty": "intermediate"
+        },
+        {
+            "name": "Barbell Row",
+            "equipment": [
+                "barbell"
+            ],
+            "muscles": [
+                "back",
+                "biceps"
+            ],
+            "difficulty": "intermediate"
+        },
+        {
+            "name": "Face Pulls",
+            "equipment": [
+                "cable machine"
+            ],
+            "muscles": [
+                "rear delts",
+                "upper back"
+            ],
+            "difficulty": "beginner"
+        },
+        {
+            "name": "Lateral Raise",
+            "equipment": [
+                "dumbbells"
+            ],
+            "muscles": [
+                "shoulders"
+            ],
+            "difficulty": "beginner"
+        },
+        {
+            "name": "Tricep Dips",
+            "equipment": [],
+            "muscles": [
+                "triceps",
+                "chest"
+            ],
+            "difficulty": "intermediate"
+        }
+    ]
+}
