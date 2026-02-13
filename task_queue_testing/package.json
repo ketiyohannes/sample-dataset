@@ -1,0 +1,16 @@
+{
+    "name": "task-queue-testing",
+    "version": "1.0.0",
+    "description": "Task queue implementation with priority and retry logic",
+    "main": "dist/queue.js",
+    "scripts": {
+        "build": "tsc"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/node": "^20.11.0",
+        "typescript": "^5.3.3"
+    }
+}
