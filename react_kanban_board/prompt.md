@@ -155,4 +155,4 @@ Modal must close on submit, outside click, or Escape; Tab, Enter submit, Escape 
 
 All five features must work together; existing drag-and-drop between columns must be unchanged. 
 
-No console errors or warnings. Definition of done is satisfied when all of the above hold.
+No console errors or warnings. 
